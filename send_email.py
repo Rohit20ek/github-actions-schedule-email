@@ -13,5 +13,5 @@ this is your daily email
 """
 context = ssl.create_default_context()
 with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-    server.login(USERNAME,USER_PASSWORD)
+    server.login(USERNAME,USERPASSWORD)
     server.sendmail(USERNAME,USERNAME,message) #from,to,message
